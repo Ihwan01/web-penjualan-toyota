@@ -1,0 +1,389 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.topbar {
+    padding: 5px 0;
+    background-color: #BF2526;
+}
+
+.topbar span{
+    color: #fff;
+    font-size: 16px;
+}
+
+@media (max-width : 768px){
+    .topbar span {
+        font-size: 12px !important;
+        display: block;
+    }
+}
+
+@media (max-width: 426px){
+    .topbar {
+        font-size: 10px;
+    }
+}
+
+.logo-col {
+    z-index: 999 !important;
+    background: #fff;
+    padding: 0;
+}
+
+.logo {
+    box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+}
+
+.mobile-logo {
+    max-width: 180px !important;
+    margin: 8px;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.nav-bar-button {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    margin-left: auto;
+}
+
+@media (max-width: 320px) {
+    .mobile-logo {
+        max-width: 140px !important;
+        margin: 14px 8px;
+    }
+}
+
+.nav-bar {
+    height: 75px;
+    border-bottom: 1px solid #ccc;
+    margin-left: 30px;
+}
+
+.nav-bar a {
+    line-height: 75px;
+    padding: 22px 15px;
+    color: #000;
+    font-size: 16px;
+}
+
+.nav-bar a.active {
+    color: #BF2526;
+    border-bottom: 5px solid #BF2526;
+}
+
+.nav-bar a:hover {
+    text-decoration: none;
+    color: #BF2526;
+}
+
+.nav-bar-mobile {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-bar-mobile.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-bar-mobile a {
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+    font-weight: 500;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+.nav-bar-mobile a.active {
+    color: #BF2526;
+}
+
+.carousel {
+    z-index: 998 !important;
+    margin-top: -60px;
+}
+
+@media (max-width: 1200px){
+    .carousel {
+        margin-top: -40px;
+    }
+}
+
+@media (max-width: 1024px){
+    .nav-bar a {
+        padding: 24px 10px;
+        font-size: 14px;
+    }
+    .carousel {
+        margin-top: -40px;
+    }
+}
+
+@media (max-width: 990px){
+    .topbar span {
+        font-size: 12px;
+    }
+    .nav-bar {
+        margin-left: 10px;
+    }
+    .nav-bar a {
+        padding: 18px 4px;
+        font-size: 12px;
+    }
+    .carousel {
+        margin-top: -20px;
+    }
+}
+
+@media (max-width: 768px){
+    .topbar-address {
+        float: none !important;
+    }
+    .nav-bar-col {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    .nav-bar {
+        margin-left: 0;
+        display: flex;
+        justify-content: space-between;
+        text-align: right;
+    }
+    .nav-bar-button, .mobile-logo {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .logo-col {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+
+    .carousel {
+        margin-top: 0px;
+    }
+    .nav-bar-item {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.home-menu-row {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.home-menu {
+    width: 100%;
+    height: 300px;
+    border-radius: 0;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+
+.home-menu.last {
+    border-right: none;
+}
+
+.home-menu-logo {
+    font-size: 70px;
+    display: inline-block;
+    width: 100%;
+    color: #BF2526;
+    display: block !important;
+}
+
+.home-menu-title {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+@media (max-width: 1024px){
+    .home-menu {
+        height: 240px;
+    }
+}
+
+@media (max-width: 768px){
+    .home-menu-container {
+        max-width: 768px;
+    }
+    .home-menu-row .col-6 {
+        padding: 10px;
+    }
+    .home-menu {
+        height: 160px;
+    }
+    .home-menu-logo {
+        font-size: 60px;
+    }
+    .home-menu-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 645px) {
+    .home-menu-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 430px){
+    .home-menu-row {
+        border-radius: 16px;
+    }
+    .home-menu-row .btn {
+        padding: 0;
+    }
+    .home-menu {
+        height: 100px;
+    }
+    .home-menu-logo {
+        font-size: 32px;
+    }
+    .home-menu-title {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 375px){
+    .home-menu {
+        height: 90px;
+        margin-bottom: 0;
+    }
+    .home-menu-title {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 320px){
+    .home-menu-row .col-6 {
+        padding: 5px;
+    }
+    .home-menu {
+        height: 80px;
+    }
+    .home-menu-logo {
+        font-size: 24px;
+    }
+    .home-menu-title {
+        font-size: 12px;
+    }
+}
+
+.komunitas {
+    background-color: #BF2526;
+    color: #fff;
+}
+
+.tampilpeta {
+    width: 100%;
+    border-radius: 20px !important;
+    overflow: hidden;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30);
+    height: 400px;
+}
+
+@media (max-width: 430px) {
+    .tampilpeta {
+        height: 200px;
+    }
+}
+
+.footer {
+    background-color: #292929;
+    color: #fff;
+}
+
+.footer h5,
+.footer h6,
+.footer p {
+    font-family: "Montserrat";
+}
+
+
+.footer p {
+    font-weight: 300;
+}
+
+/* HARGA */
+
+.row-harga img {
+    width: 100%;
+}
+
+.row-harga-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background: #BF2526;
+    color: #fff;
+    padding: 10px;
+}
+
+.table-harga td {
+    vertical-align: middle;
+}
+
+/* GALERI */
+
+.galeri-col {
+    padding: 10px;
+    background: #f2f2f2;
+}
+
+.galeri-col img {
+    width: 100%;
+}
+
+.galeri-caption {
+    color: black;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+/* SIMULASI KREDIT */
+.angsuran-box {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.angsuran-box.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* PROFIL KENDARAAN */
+.slide-wrapper {
+    padding: 10px;
+}
+
+.slide-wrapper td:hover {
+    outline: 2px solid #000;
+}
+
+.slide-wrapper img {
+    max-width: 200px;
+}
